@@ -35,6 +35,9 @@ import { ReplayComponent } from './layout/observable/replay/replay.component';
 import { AsyncComponent } from './layout/observable/async/async.component';
 import { ConcatComponent } from './layout/observable/concat/concat.component';
 import { MergeComponent } from './layout/observable/merge/merge.component';
+import { MergeMapComponent } from './layout/observable/merge-map/merge-map.component';
+import { ConcatMapComponent } from './layout/observable/concat-map/concat-map.component';
+
 
 @NgModule({
   declarations: [
@@ -62,7 +65,9 @@ import { MergeComponent } from './layout/observable/merge/merge.component';
     ReplayComponent,
     AsyncComponent,
     ConcatComponent,
-    MergeComponent
+    MergeComponent,
+    MergeMapComponent,
+    ConcatMapComponent,
   ],
   imports: [
     BrowserModule,

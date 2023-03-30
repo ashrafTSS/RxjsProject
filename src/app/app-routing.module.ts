@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AsyncAwiteComponent } from './layout/obervable/async-awite/async-awite.component';
 import { AsyncComponent } from './layout/observable/async/async.component';
+import { ConcatMapComponent } from './layout/observable/concat-map/concat-map.component';
 import { ConcatComponent } from './layout/observable/concat/concat.component';
 import { CustomObservableComponent } from './layout/observable/custom-observable/custom-observable.component';
 import { DebounceComponent } from './layout/observable/debounce/debounce.component';
@@ -9,6 +10,7 @@ import { FilterComponent } from './layout/observable/filter/filter.component';
 import { FormeventComponent } from './layout/observable/formevent/formevent.component';
 import { IntervalTimerComponent } from './layout/observable/interval-timer/interval-timer.component';
 import { MapComponent } from './layout/observable/map/map.component';
+import { MergeMapComponent } from './layout/observable/merge-map/merge-map.component';
 import { MergeComponent } from './layout/observable/merge/merge.component';
 import { ObservableComponent } from './layout/observable/observable.component';
 import { OfFormComponent } from './layout/observable/of-form/of-form.component';
@@ -42,7 +44,9 @@ const routes: Routes = [
     {path:'replay',component:ReplayComponent},
     {path:'async',component:AsyncComponent},
     {path:'concat',component:ConcatComponent},
-    {path:'merge',component:MergeComponent}
+    {path:'merge',component:MergeComponent},
+    {path:'mergeMap',component:MergeMapComponent},
+    {path:'concatMap',component:ConcatMapComponent}
   ]},
   {path:'**',redirectTo:'promise'}
 ];
