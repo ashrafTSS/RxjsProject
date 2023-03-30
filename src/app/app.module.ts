@@ -33,6 +33,8 @@ import { Comp2Component } from './layout/observable/comp2/comp2.component';
 import { Comp3Component } from './layout/observable/comp3/comp3.component';
 import { ReplayComponent } from './layout/observable/replay/replay.component';
 import { AsyncComponent } from './layout/observable/async/async.component';
+import { ConcatComponent } from './layout/observable/concat/concat.component';
+import { MergeComponent } from './layout/observable/merge/merge.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +60,9 @@ import { AsyncComponent } from './layout/observable/async/async.component';
     Comp2Component,
     Comp3Component,
     ReplayComponent,
-    AsyncComponent
+    AsyncComponent,
+    ConcatComponent,
+    MergeComponent
   ],
   imports: [
     BrowserModule,

@@ -16,4 +16,11 @@ export class DesignService {
 
   constructor() { }
 
+  //print method for li
+  print(val,containerId){
+    let el = document.createElement('li')
+    el.innerText = val
+    document.getElementById(containerId).appendChild(el)
+  }
+
 }

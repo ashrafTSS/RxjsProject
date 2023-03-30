@@ -30,10 +30,8 @@ constructor(private design:DesignService){}
 //complete subscription
 onComplete(){
   this.design.asyncVideo.complete()
-  console.log('sjdfsjfn');
-
-
 }
+
 
 }
 
