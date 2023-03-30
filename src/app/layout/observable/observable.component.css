@@ -1,0 +1,9 @@
+.bg-ay{
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding-block: 50px;
+}
+.bg-ay:hover{
+  background:linear-gradient(45deg, #666db7, transparent);
+  color: gray;
+}

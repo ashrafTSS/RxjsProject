@@ -1,0 +1,43 @@
+<div class="container mt-5">
+  <h4>Retry,RetryWhen,Scan and Delay</h4>
+  <br><br>
+  <div class="row">
+    <div class="col-md-6">
+      <table class="table table-success table-striped" >
+        <thead>
+          <tr *ngIf="urls">
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Username</th>
+            <th scope="col">Website</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of urls">
+            <th scope="row">{{item.id}}</th>
+            <td>{{item.name}}</td>
+            <td>{{item.phone}}</td>
+            <td>{{item.username}}</td>
+            <td>{{item.website}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <button class="btn btn-primary" type="button" (click)="fetchDetails()">
+    <span *ngIf="fetching"  class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+    {{fetching? 'Fetching.....' : 'Fetch Details'}}
+  </button>
+  <br><br>
+  <p>
+    Status :
+    <strong [ngClass]="{'text-success' : status == 'Data Fetched',
+                      'text-danger' : status == 'Problem Fetched Data'}">{{status}}</strong>
+                      <span *ngIf="fetching" class="spinner-grow spinner-grow-sm text-warning" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </span>
+
+  </p>
+</div>
+

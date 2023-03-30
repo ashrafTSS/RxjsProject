@@ -1,0 +1,77 @@
+<div class="container mt-5">
+  <strong><h4>Filter works!</h4></strong>
+  <br><br>
+  <div class="row">
+    <div class="col-md-4">
+      <strong>Ex - 01 </strong>
+      <br>
+      <p class="bg-info border rounded p-2">
+        <strong>Filter : </strong> by Length
+      </p>
+      <br>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of dataGen">
+             <td>{{item.id}}</td>
+             <td>{{item.name}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-4">
+      <strong>Ex - 02 </strong>
+      <br>
+      <p class="bg-info border rounded p-2">
+        <strong>Filter : </strong> by gender
+      </p>
+      <br>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Gender</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of dataGen2">
+             <td>{{item.id}}</td>
+             <td>{{item.name}}</td>
+             <td>{{item.gender}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-4">
+      <strong>Ex - 03 </strong>
+      <br>
+      <p class="bg-info border rounded p-2">
+        <strong>Filter</strong> by item
+      </p>
+      <br>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Gender</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of dataGen3">
+             <td>{{item.id}}</td>
+             <td>{{item.name}}</td>
+             <td>{{item.gender}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>

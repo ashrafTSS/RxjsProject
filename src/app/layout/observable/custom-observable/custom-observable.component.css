@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+ul.list{
+  list-style: none;
+}
+
+ul.list li{
+  border: 1px solid red;
+  border-radius: 4px;
+  margin-block: 10px;
+  padding: 10px;
+}
+
+ul.list.error li{
+  border: 1px solid red;
+  color: red !important;
+  border-radius: 4px;
+  margin-block: 10px;
+  padding: 10px;
+}
+
+
+ul.list.complete li{
+  border: 1px solid rgb(36, 228, 78);
+  color: green;
+  border-radius: 4px;
+  margin-block: 10px;
+  padding: 10px;
+}
+
+
+
+/* 2nd list  */
+ul.list2{
+  list-style: none;
+}
+
+ul.list2 li{
+  border: 1px solid rgb(0, 4, 255);
+  border-radius: 4px;
+  margin-block: 10px;
+  padding: 10px;
+}
