@@ -37,6 +37,9 @@ import { ConcatComponent } from './layout/observable/concat/concat.component';
 import { MergeComponent } from './layout/observable/merge/merge.component';
 import { MergeMapComponent } from './layout/observable/merge-map/merge-map.component';
 import { ConcatMapComponent } from './layout/observable/concat-map/concat-map.component';
+import { SwitchMapComponent } from './layout/observable/switch-map/switch-map.component';
+import { SwitchserchComponent } from './layout/observable/switchserch/switchserch.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -68,6 +71,8 @@ import { ConcatMapComponent } from './layout/observable/concat-map/concat-map.co
     MergeComponent,
     MergeMapComponent,
     ConcatMapComponent,
+    SwitchMapComponent,
+    SwitchserchComponent,
   ],
   imports: [
     BrowserModule,
@@ -75,7 +80,8 @@ import { ConcatMapComponent } from './layout/observable/concat-map/concat-map.co
     HttpClientModule,
     BrowserAnimationsModule,
     MatTableModule,
-    LoadingBarModule
+    LoadingBarModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

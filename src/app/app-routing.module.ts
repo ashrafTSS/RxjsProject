@@ -22,6 +22,8 @@ import { TakeComponent } from './layout/observable/take/take.component';
 import { TapComponent } from './layout/observable/tap/tap.component';
 import { ToArrayComponent } from './layout/observable/to-array/to-array.component';
 import { PromiseComponent } from './layout/promise/promise.component';
+import { SwitchMapComponent } from './layout/observable/switch-map/switch-map.component';
+import { SwitchserchComponent } from './layout/observable/switchserch/switchserch.component';
 
 const routes: Routes = [
   {path:'promise',component:PromiseComponent},
@@ -46,7 +48,9 @@ const routes: Routes = [
     {path:'concat',component:ConcatComponent},
     {path:'merge',component:MergeComponent},
     {path:'mergeMap',component:MergeMapComponent},
-    {path:'concatMap',component:ConcatMapComponent}
+    {path:'concatMap',component:ConcatMapComponent},
+    {path:'switchMap',component:SwitchMapComponent},
+    {path:'switchSearch',component:SwitchserchComponent}
   ]},
   {path:'**',redirectTo:'promise'}
 ];
