@@ -24,6 +24,8 @@ import { ToArrayComponent } from './layout/observable/to-array/to-array.componen
 import { PromiseComponent } from './layout/promise/promise.component';
 import { SwitchMapComponent } from './layout/observable/switch-map/switch-map.component';
 import { SwitchserchComponent } from './layout/observable/switchserch/switchserch.component';
+import { ExhaustMapComponent } from './layout/observable/exhaust-map/exhaust-map.component';
+import { ZipforkComponent } from './layout/observable/zipfork/zipfork.component';
 
 const routes: Routes = [
   {path:'promise',component:PromiseComponent},
@@ -50,7 +52,9 @@ const routes: Routes = [
     {path:'mergeMap',component:MergeMapComponent},
     {path:'concatMap',component:ConcatMapComponent},
     {path:'switchMap',component:SwitchMapComponent},
-    {path:'switchSearch',component:SwitchserchComponent}
+    {path:'switchSearch',component:SwitchserchComponent},
+    {path:'exhaustMap',component:ExhaustMapComponent},
+    {path:'zip',component:ZipforkComponent}
   ]},
   {path:'**',redirectTo:'promise'}
 ];

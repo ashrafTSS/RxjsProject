@@ -40,6 +40,8 @@ import { ConcatMapComponent } from './layout/observable/concat-map/concat-map.co
 import { SwitchMapComponent } from './layout/observable/switch-map/switch-map.component';
 import { SwitchserchComponent } from './layout/observable/switchserch/switchserch.component';
 import { FormsModule } from '@angular/forms';
+import { ExhaustMapComponent } from './layout/observable/exhaust-map/exhaust-map.component';
+import { ZipforkComponent } from './layout/observable/zipfork/zipfork.component';
 
 
 @NgModule({
@@ -73,6 +75,8 @@ import { FormsModule } from '@angular/forms';
     ConcatMapComponent,
     SwitchMapComponent,
     SwitchserchComponent,
+    ExhaustMapComponent,
+    ZipforkComponent,
   ],
   imports: [
     BrowserModule,
