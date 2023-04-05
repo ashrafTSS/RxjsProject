@@ -1,0 +1,73 @@
+<div class="container mt-5">
+  <h3>ShareReplay</h3>
+  <br /><br />
+  <div class="row">
+    <div class="col-md-6">
+      <strong>proudcts : <span class="text-primary">Laptop</span></strong>
+      <br><br>
+      <div class="row">
+        <div class="card" style="width: 18rem">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <small>Id : p2</small>
+            <h5 class="card-title">Laptop-Dell</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Laptop</h6>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <div class="d-flex align-items-center ">
+              <strong class="mx-2">price : 4500</strong>
+              <a href="#" class="btn btn-primary mx-2">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <strong>proudcts : <span class="text-warning">Mobile</span></strong>
+      <br><br>
+      <div class="row">
+        <div class="card" style="width: 18rem">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <small>Id : p1</small>
+            <h5 class="card-title">Mobile-Android</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Mobile</h6>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <div class="d-flex align-items-center ">
+              <strong class="mx-2">price : 5500</strong>
+              <a href="#" class="btn btn-primary mx-2">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-md-12 ">
+      <strong>All Product</strong>
+      <br /><br />
+      <div class="row">
+        <div class="card" style="width: 18rem" *ngFor="let item of allProduct">
+          <img src="{{item.imgUrl}}" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <small>Id : {{item.id}}</small>
+            <h5 class="card-title">{{item.name}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{item.type}}</h6>
+            <p class="card-text">
+              {{item.description}}
+            </p>
+            <div class="d-flex align-items-center ">
+              <strong class="mx-2">price : {{item.price}}</strong>
+              <a href="#" class="btn btn-primary mx-2">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

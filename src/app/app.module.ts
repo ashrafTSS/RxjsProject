@@ -42,6 +42,7 @@ import { SwitchserchComponent } from './layout/observable/switchserch/switchserc
 import { FormsModule } from '@angular/forms';
 import { ExhaustMapComponent } from './layout/observable/exhaust-map/exhaust-map.component';
 import { ZipforkComponent } from './layout/observable/zipfork/zipfork.component';
+import { ShareReplayComponent } from './layout/observable/share-replay/share-replay.component';
 
 
 @NgModule({
@@ -77,6 +78,7 @@ import { ZipforkComponent } from './layout/observable/zipfork/zipfork.component'
     SwitchserchComponent,
     ExhaustMapComponent,
     ZipforkComponent,
+    ShareReplayComponent,
   ],
   imports: [
     BrowserModule,

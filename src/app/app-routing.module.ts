@@ -26,6 +26,7 @@ import { SwitchMapComponent } from './layout/observable/switch-map/switch-map.co
 import { SwitchserchComponent } from './layout/observable/switchserch/switchserch.component';
 import { ExhaustMapComponent } from './layout/observable/exhaust-map/exhaust-map.component';
 import { ZipforkComponent } from './layout/observable/zipfork/zipfork.component';
+import { ShareReplayComponent } from './layout/observable/share-replay/share-replay.component';
 
 const routes: Routes = [
   {path:'promise',component:PromiseComponent},
@@ -54,6 +55,7 @@ const routes: Routes = [
     {path:'switchMap',component:SwitchMapComponent},
     {path:'switchSearch',component:SwitchserchComponent},
     {path:'exhaustMap',component:ExhaustMapComponent},
+    {path:'shareReplay',component:ShareReplayComponent},
     {path:'zip',component:ZipforkComponent}
   ]},
   {path:'**',redirectTo:'promise'}
